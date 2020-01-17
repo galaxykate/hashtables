@@ -116,12 +116,11 @@ pre.code {
 }
 
 
-#app {
+.controls {
 	box-shadow: 1px 2px 5px rgba(0, 0, 0, .9);
-	border: 1px solid magenta;
-	margin: 40px;
-	padding: 50px;
+	background-color: hsla(190, 100%, 90%, 1);
 }
+
 
 @media only screen and (min-width: 15em) {
 	/* Style adjustments for viewports that meet the condition */

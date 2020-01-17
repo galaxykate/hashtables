@@ -1,11 +1,30 @@
-.hashtable {
-	display: flex;
-	flex-direction: horizontal;
+
+#app {
 	box-shadow: 1px 2px 5px rgba(0, 0, 0, .9);
 	border: 1px solid magenta;
-	margin: 40px;
-	padding: 50px;
+	margin: 10px;
+	padding: 10px;
+	background: hsl(50, 10%, 90%);
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.hashtable {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	background: hsl(250, 30%, 70%);
 
+}
+
+.bitcoin-list {
+	height: 140px;
+	overflow: scroll;
+}
+.bucketholder {
+	flex: 1;
+	display: flex;
+	flex-direction: row;
 }
 
 .hashbucket {
@@ -27,5 +46,6 @@
 }
 .control-column {
 	border: 1px solid cyan;
+	flex-direction: column;	
 	
 }
