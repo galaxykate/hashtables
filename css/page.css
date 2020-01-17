@@ -1,0 +1,160 @@
+:root {
+	--main-bg-color:  hsl(29, 40%, 95%);
+}
+
+
+html, body {
+	height: 100%;
+}
+body {
+	background-image: url("img/retina_wood.png");
+	background-color: #cccccc;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Nunito', sans-serif;
+}
+
+h1,h2 {
+
+	font-family: 'Fredoka One', cursive;
+}
+
+header {
+	background-color: var(--main-bg-color);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, .2);
+	min-height: 64px;
+	display: flex;
+	flex-direction: row;
+}
+
+#header-title {
+	margin: 0px;
+
+}
+
+#header-subtitle {
+	margin: 0px;
+	line-height: 90%;
+	font-style: italic;
+}
+#header-img {
+	max-width: 64px;
+	display: block;
+	padding: 3px;
+	max-height: 64px;
+}
+
+footer {
+	opacity: .5;
+	font-size: 70%;
+	padding: 2px 6px;
+	background-color: var(--main-bg-color);
+	
+
+}
+
+nav {
+	flex: 1;
+	text-align: right;
+}
+
+
+.nav-button {
+	margin: 2px;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 1px 5px;
+	display: inline-block;
+	background-color: hsla(190, 100%, 50%, 1);
+}
+
+#nav-buttons {
+	position: relative;
+	display: none;
+	/*background-color: hsla(190, 100%, 20%, 1);*/
+}
+
+#nav-burger {
+	display: inline-block;
+	background-color: hsla(190, 100%, 50%, 1);
+}
+
+main {
+	flex: 1;
+
+}
+
+p.text {
+	box-shadow: 1px 3px 4px rgba(0, 0, 0, .5);
+	border: 1px solid cyan;
+	padding: 3px;
+	margin: 2px;
+	background-color: hsla(90, 100%, 80%, 1);
+}
+
+
+pre.code {
+
+	display: inline-block;
+	box-shadow: 1px 3px 4px rgba(0, 0, 0, .5);
+	border: 1px solid cyan;
+	padding: 3px;
+	margin: auto 2px;
+	border-radius: 5px;
+	background-color: hsla(90, 100%, 90%, 1);
+}
+
+
+
+.section {
+	box-shadow: 1px 2px 5px rgba(0, 0, 0, .9);
+	border: 1px solid magenta;
+	padding: 3px;
+	margin: 8px;
+	border-radius: 5px;
+	background-color: hsla(190, 100%, 50%, 1);
+}
+
+
+#app {
+	box-shadow: 1px 2px 5px rgba(0, 0, 0, .9);
+	border: 1px solid magenta;
+	margin: 40px;
+	padding: 50px;
+}
+
+@media only screen and (min-width: 15em) {
+	/* Style adjustments for viewports that meet the condition */
+	nav {
+
+	}
+
+	#nav-buttons {
+
+		display: inline-block;
+	}
+
+	#nav-burger {
+		display: none;
+	}
+
+	.nav-button {
+		width: 48%;
+	}
+}
+
+
+@media only screen and (min-width: 35em) {
+	/* Style adjustments for viewports that meet the condition */
+	nav {
+
+	}
+
+	.nav-button {
+		width: auto;
+	}
+}
+
+
+
+}
